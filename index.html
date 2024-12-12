@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"/>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat+Underline:ital,wght@0,100..900;1,100..900&family=Oswald:wght@200..700&display=swap" rel="stylesheet">
+</head>
+<style>
+    *{
+        box-sizing: border-box;
+    }
+    body{
+        margin: 0px;
+    }
+    .headd{
+        width: 100%;
+        height: 150px;
+        background-color: #000000;
+        padding-top: 30px;
+    }
+    .headnav{
+        display: inline-block;
+        width: calc(100% - 260px);
+        text-align:right;
+    }
+    .listt{
+        list-style-type: none;
+    }
+    .list-nav{
+        display: inline-block;
+        padding: 10px;
+
+    }
+    #baslik{
+        font-size: 30px;
+        margin-left: 25px;
+        font-weight: bold;
+        font-family: "Montserrat Underline", sans-serif;
+    }
+    .headd a{
+        text-decoration: none;
+        color: wheat;
+        font-size: 19px;
+    }
+    .showvide{
+        width: 100%;
+        margin: 0px;
+        padding: 0px;
+    }
+    .videov{
+        width: 100%;
+    }
+    .orta{
+        text-align: center;
+    }
+    .row {
+                margin-bottom: 40px;
+            }
+
+            .col {
+                display: inline-block;
+                width: 30%;
+                padding: 16px;
+                margin: 8px;
+            }
+    .stitle{
+                        font-family: "Montserrat Underline", sans-serif;
+    }
+    .row p{
+        font-family: "Oswald", sans-serif;
+    }
+    .foot{
+        width: 100%;
+        height: 200px;
+        background-color: #000000;
+        color: wheat;
+    }
+    .sol{
+        text-align: center;
+        width: 33%;
+        float: left;
+        font-family: "Oswald", sans-serif;
+        font-size: 20px;
+    }
+    .orta{
+        list-style: none;
+        margin-right: 30px;
+    }
+    .orta-list{
+        display: inline-block;
+        padding: 5px;
+        color: wheat;
+    }
+    .orta-list a{
+        text-decoration: none;
+        color: wheat;
+    }
+
+</style>
+<body>
+    <header class="headd">
+        <a id="baslik" href="#">ENPA OPTİK</a>
+        <nav class="headnav">
+            <ul class="listt">
+                <li class="list-nav"><a href="#">ERKEK</a></li>
+                <li class="list-nav"><a href="#">KADIN</a></li>
+                <li class="list-nav"><a href="#">ÇOCUK</a></li>
+                <li class="list-nav"><a href="#">GÜNEŞ GÖZLÜKLERİ</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section class="showvide">
+            <video class="videov" src="./arman.mp4" autoplay muted loop></video>
+        </section>
+        <section class="orta">
+            <div class="row">
+                <h1 class="stitle">ENPA OPTİK</h1>
+                <p>Siz İsteyin Biz Yapalım</p>
+            </div>
+            <div class="row">
+                <div class="icon-box col">
+                    <i class="fa-solid fa-glasses fa-2xl"></i>
+                    <h3>Çerçeveler</h3>
+                    <p>Geniş ürün stoğumuzla beraber yüz hatlarınıza uygun çerçeveler ve göz sağlığınız için kaliteli camlar ile hizmetinizdeyiz</p>
+                </div>
+                <div class="icon-box col">
+                    <i class="fa-solid fa-shield-halved fa-2xl"></i>
+                    <h3>Garanti&İade</h3>
+                    <p>İşletmemizde güvenilirliğimiz her zaman ön planda tutuyoruz aldığınız herhangi bir üründe 15 gün içinde iade garantisi veriyoruz.</p>
+                </div>
+                <div class="icon-box col">
+                    <i class="fa-solid fa-box-archive fa-2xl"></i>
+                    <h3>Güneş Gözlükleri</h3>
+                    <p>Geniş Ürün ve Marka stoğumuz ile her bütçeye uygun güneş gözlükleri ile hizmetinizdeyiz.</p>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer class="foot">
+        <div class="sol">
+            <h3>iletişim</h3>
+            <p>Enver Pala: 05073619154</p>
+            <p>Volkan Pala: 0536721123</p>
+        </div>
+        <div class="sol">
+            <h3>Sosyal Medya</h3>
+            <ul class="orta">
+                <li class="orta-list"> <a href="https://www.instagram.com/enver_pala/"><i class="fa-brands fa-instagram fa-2xl"></i></a></li>
+                <li class="orta-list"> <a href="https://www.facebook.com/volkan.pala.908"><i class="fa-brands fa-facebook fa-2xl"></i></a></li>
+                <li class="orta-list"><i class="fa-solid fa-envelopes-bulk fa-2xl"></i></li>
+            </ul>
+        </div>
+        <div class="sol">
+            <h3>Adres</h3>
+            <p>Hacı mütahir mahallesi rasim erel caddesi no:31/62</p>
+            <p>KONYA/EREĞLİ</p>
+        </div>
+    </footer>
+</body>
+</html>
