@@ -1,0 +1,205 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat+Underline:ital,wght@0,100..900;1,100..900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Open Sans', sans-serif;
+}
+img{
+    width: 100%;
+}
+.navbar{
+    display: flex;
+    background-color: black;
+    color: white;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    height: 70px;
+    opacity: 0.8;
+    position: fixed;
+}
+
+.navbar ul{
+    display: flex;
+    list-style: none;
+    list-style-type: none;
+}
+.navbar a{
+    text-decoration: none;
+    color: white;
+    margin: 1rem 2rem;
+    padding: .5rem;
+    font-weight: 700;
+}
+.head a:hover{
+    border-bottom: solid 2px yellow;
+}
+.head h1{
+    font-family: "montserrat underline";
+    margin-left: 50px;
+    font-size: 3rem;
+    cursor: pointer;
+}
+.head h1:hover{
+    color: rgb(174, 51, 51);
+    transition: 0.9s;
+}
+.mp4 video{
+    width: 100%;
+    height: 100%;
+}
+.mp4 .yazi{
+    top: 0;
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    color: white;
+    justify-content: flex-start;
+    align-items: center;
+    text-align: center;
+    width: 100%;
+    height: 100%;
+}
+.yazi h1{
+    margin-top: 10rem;
+    font-family: "montserrat underline";
+    font-size: 10rem;
+    color: white;
+    cursor: pointer;
+}
+.yazi h1:hover{
+    color: rgb(174, 51, 51);
+    transition: 0.9s;
+}
+.yazi p{
+    font-size: 1.5rem;
+}
+.flex-item{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    height: 100%;
+}
+.flex-item > div{
+    padding: 20px;
+    flex-basis: 100%;
+}
+.icons{
+    margin: 1rem;
+    padding: 30px;
+}
+.icons h3{
+    margin-bottom: 1rem;
+}
+.icons i{
+    background-color: #007bff;
+    color: white;
+    padding: 1rem;
+    border-radius: 50%;
+    margin-bottom: 1.5rem;
+}
+.bilgi .row{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 100%;
+}
+.bilgi .column{
+    flex: 1;
+}
+.bilgi video{
+    width: 100%;
+    height: 100%;
+}
+.bilgi h2{
+    font-size: 4rem;
+    font-weight: 700;
+}
+.bilgi p{
+    margin: 2rem 0;
+    font-weight: 400;
+}
+.bilgi .column-2{
+    height: 99%;
+    background-color: #c8c9d5;
+    color:black;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+.optik-header{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    margin: 4rem 0 4rem 0;
+}
+.optik-header h2{
+    font-size: 4rem;
+    font-weight: 700;
+    margin: 2rem 0;
+    border-bottom: 2px black solid;
+}
+.section-padding{
+    padding: 2rem 2rem 4rem;
+}
+.card{
+    border-radius: 50%;
+}
+.card-body{
+    background-color: black;
+    color: white;
+    padding: 4rem;
+    margin-top: -10px;
+}
+.card-body h2{
+    margin-bottom: 1rem;
+    border-bottom: 2px white solid;
+}
+
+@media(max-width:768px){
+    html{
+        font-size: 13px;
+    }
+    .navbar{
+        flex-direction: column;
+        height: 110px;
+        padding: 20px;
+        opacity: 1;
+        position: relative;
+    }
+    .navbar a{
+        margin: 1rem .5rem;
+    }
+    .flex-item{
+        flex-direction: column;
+    }
+    .bilgi .row{
+        flex-direction: column;
+    }
+    .bilgi .column-2{
+        background-color: black;
+        color: white;
+        height: 200px;
+    }
+    .bilgi .column-2 h2{
+        font-size: 2rem;
+    }
+    .bilgi.column-2 p{
+        font-size: 9px;
+    }
+    .mp4{
+        width: 100%;
+    }
+    .mp4 .yazi{
+        display: none;
+    }
+}
